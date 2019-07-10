@@ -1,0 +1,354 @@
+.navbar{
+	background-color: black;
+}
+
+.nav-link{
+	margin-left: 5px;
+	color: white;       
+	height: 15px;       
+	font-size: 20px; 
+	font-family: Courier New;   
+	text-align: center;         
+	margin-bottom: 25px;
+}
+/*=================================================================*/
+/*Icon Searching*/
+    .wrapper{
+      cursor: pointer;
+      position: absolute;
+      top: 30%;
+      left: 78%;
+      transform: translate(-90%,0%);
+      background: white;
+      border-radius: 40px;
+      padding: 10px;
+    }
+    .input{
+      width: 0px;
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      padding: 0;
+      color: #2f3640;
+      font-size: 16px;
+      line-height: 30px;
+      transition: 0.7s ;
+    }
+    .searchbtn{
+      color: #2574A9;
+      float: right;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s ;
+    }
+    .wrapper:hover > .input{
+      width: 180px;
+      padding: 0 6px;
+
+    }
+    .wrapper:hover > .searchbtn{
+      background: linear-gradient(45deg, #D68B47, #BA6918);
+      color: white;
+    }
+
+/*Icon Share*/
+    .el{
+      cursor: pointer;
+      font-family: sans-serif;
+      position: absolute;
+      top: 30%;
+      left: 80%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 60px;
+      height: 380px;
+      
+    }
+
+    .el:before{
+      content: "\f1e0";
+      font-family: fontAwesome;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(45deg, #D68B47, #BA6918);
+      border-radius: 50px;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-size: 20px;
+      margin: 0 2px;
+      transition: 0.5s;
+      z-index: 1;
+    }
+    .el:hover:before{
+      transform: translateY(0px);
+      width: 89%;
+      height: 97%;
+      z-index: -1;
+    }
+    .el li{
+      position: absolute;
+      list-style: none;
+      transition: 1s;
+    }
+    .el li a{
+      margin-left: 1px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 60px;
+      text-align: center;
+      background: #262626;
+      color: #fff;
+      
+      border-radius: 50%;
+      font-size: 30px;
+      transition: 1s;
+    }
+    .el li:nth-child(1) a{
+      background: #3b5999;
+    }
+     .el li:nth-child(2) a{
+      background: #55acee;
+    }
+     .el li:nth-child(3) a{
+      background: #e4405f;
+    }
+     .el li:nth-child(4) a{
+      background: #af0606;
+    }
+     .el li:nth-child(5) a{
+      background: #0077B5;
+    }
+    .el:hover li:nth-child(1) a{
+      transform: translateY(64px) rotate(360deg);
+      transition-delay: 0.8s;
+    }
+    .el:hover li:nth-child(2) a{
+      transform: translateY(128px) rotate(360deg);
+      transition-delay: 0.6s;
+    }
+    .el:hover li:nth-child(3) a{
+      transform: translateY(192px) rotate(360deg);
+      transition-delay: 0.4s;
+    }
+    .el:hover li:nth-child(4) a{
+      transform: translateY(256px) rotate(360deg);
+      transition-delay: 0.2s;
+    }
+    .el:hover li:nth-child(5) a{
+      transform: translateY(320px) rotate(360deg);
+      transition-delay: 0s;
+    }
+
+
+/*Icon Bahasa*/
+    .dropdown{
+      cursor: pointer;
+      position: absolute;
+      top: 30%;
+      left: 85%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 60px;
+      height: 60px;
+    }
+    .dropdown:before{
+      content: "\f1ab";
+      font-family: fontAwesome;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(45deg, #D68B47, #BA6918);
+      border-radius: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      font-size: 20px;
+    }
+
+
+/*Icon Pengaturan*/
+      .al{
+      cursor: pointer;
+      font-family: sans-serif;
+      position: absolute;
+      top: 30%;
+      left: 90%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 50px;
+      height: 380px;
+      
+    }
+
+    .al:before{
+      content: "\f085";
+      font-family: fontAwesome;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(45deg, #D68B47, #BA6918);
+      border-radius: 50px;
+      text-align: center;
+      line-height: 55px;
+      color: #fff;
+      font-size: 20px;
+      margin: 0 2px;
+      transition: 0.5s;
+      z-index: 1;
+    }
+    .al:hover:before{
+      transform: translateY(0px);
+      width: 89%;
+      height: 97%;
+      z-index: -1;
+    }
+    .al li{
+      position: absolute;
+      list-style: none;
+      transition: 1s;
+    }
+    .al li .ic{
+      margin-left: 5px;
+      margin-top: 3px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      line-height: 55px;
+      text-align: center;
+      align-items: center;
+      background: #262626;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 20px;
+      transition: 1s;
+    }
+    .al li:nth-child(1) .ic{
+      background: #F4AD46;
+    }
+     .al li:nth-child(2) .ic{
+      background: #F4AD46;
+    }
+     .al li:nth-child(3) .ic{
+      background: #F4AD46;
+    }
+     .al li:nth-child(4) .ic{
+      background: #F4AD46;
+    }
+     .al li:nth-child(5) .ic{
+      background: #F4AD46;
+    }
+    .al:hover li:nth-child(1) .ic{
+      transform: translateY(64px) rotate(360deg);
+      transition-delay: 0.8s;
+    }
+    .al:hover li:nth-child(2) .ic{
+      transform: translateY(128px) rotate(360deg);
+      transition-delay: 0.6s;
+    }
+    .al:hover li:nth-child(3) .ic{
+      transform: translateY(192px) rotate(360deg);
+      transition-delay: 0.4s;
+    }
+    .al:hover li:nth-child(4) .ic{
+      transform: translateY(256px) rotate(360deg);
+      transition-delay: 0.2s;
+    }
+    .al:hover li:nth-child(5) .ic{
+      transform: translateY(320px) rotate(360deg);
+      transition-delay: 0s;
+    }
+
+
+
+
+
+/*================================================================*/
+
+
+.jumbotron{
+	background-image: url();
+	padding-top: 120px;
+}
+
+.jumbotron .col{
+	background-image: url(assets/img/Ferrari-Store-Dubai-Mall-1.jpg);
+}
+
+.jumbotron img{
+	width: 25%;
+}
+
+.jumbotron p{
+	font-size: 30px;
+}
+
+
+hr{
+	width: 230px;
+	border-top: 4px solid #999;
+}
+
+
+section{
+	min-height: 400px;
+}
+
+
+.portofolio{
+	background-color: #eee;
+}
+
+.potofolio img{
+	width: 25%;
+}
+
+/*===========================================================*/
+#SUKU{
+	background-color: #102126;
+	color: white;
+}
+
+div p1{
+	margin-bottom: 40px;
+	margin: 20px;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+
+hr{
+	justify-content: center;
+	margin-left: -5px;
+	width: 200px;
+	border-top: 4px solid #999; 
+}
+
+ div p{
+    text-align: left;
+    font-size: 19px;
+    font-family: Courier New; 
+}
+
+#kaki{
+  width: 100%;
+  height: 40px;
+  color: rgb(30,98,94);
+  background-color: #0f1517;
+  padding-top: 5px;
+}
+
+.A{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
